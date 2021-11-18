@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 MORSE_CODE = {
   A: '.-',
   B: '-...',
