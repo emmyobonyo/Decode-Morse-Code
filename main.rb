@@ -1,4 +1,5 @@
-frozen_string_literal: true
+# frozen_string_literal: true
+
 MORSE_CODE = {
   A: '.-',
   B: '-...',
@@ -44,7 +45,7 @@ words = gets.chomp
 
 def decode_word(word)
   actual_word = []
-  array_words = word.split()
+  array_words = word.split
   array_words.each do |array_word|
     MORSE_CODE.each do |key, value|
       actual_word.push(key) if array_word == value
@@ -64,6 +65,7 @@ def decode_sentence(sentence)
   actual_sentences.each do |actual_sentence|
     decode_word(actual_sentence)
   end
+  puts sentences.join
 end
 
 decode_sentence(input_sentences)
