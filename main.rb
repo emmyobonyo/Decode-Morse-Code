@@ -53,3 +53,16 @@ def decode_word(word)
 end
 
 decode_word(words)
+
+puts 'Please enter a sentence'
+input_sentences = gets.chomp
+
+def decode_sentence(sentence)
+  sentences = []
+  actual_sentences = sentence.split(/   /)
+  actual_sentences.each do |actual_sentence|
+    decode_word(actual_sentence)
+  end
+end
+
+decode_sentence(input_sentences)
